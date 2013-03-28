@@ -8,6 +8,7 @@ int main()
 
   int x,y,z;
 
+  // The following is evaluated as (++x || (++y && ++z))
   x = y = z = 1;
   ++x || ++y && ++z; PRINT(x,y,z);
 
